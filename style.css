@@ -1,0 +1,125 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E9EED9;
+    color: #333;
+}
+
+header {
+    text-align:left;
+    padding: 20px;
+    background-color:#F1F1F1;
+    color: black;
+}
+
+#profile-picture {
+    width: 150px;
+    border-radius: 50%;
+}
+
+section {
+    margin: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    color: white;
+    border: none;
+    background-color: #750E21;
+}
+
+h2 {
+    color: #2a9d8f;
+}
+
+/* Style for all section borders */
+section {
+    padding: 15px;
+    margin: 20px;
+    border: 4px solid; /* Initial border thickness */
+    border-radius: 8px; /* Optional: round corners */
+    border-image-slice: 1; /* Ensures gradient covers entire border */
+}
+
+/* Gradient border for Education section */
+#education {
+    border-image-source: linear-gradient(45deg, black, black); /* Blue gradient */
+}
+
+/* Gradient border for Work Experience section */
+#experience {
+    border-image-source: linear-gradient(45deg, black, black); /* Warm orange-pink gradient */
+}
+
+/* Gradient border for Skills section */
+#skills {
+    border-image-source: linear-gradient(45deg, black, black); /* Purple to blue gradient */
+}
+
+/* Make the layout responsive using media queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #resume-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #profile-picture {
+        width: 100px; /* Smaller profile picture */
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+/* Tablets (portrait mode) */
+@media only screen and (max-width: 768px) {
+    #resume-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #profile-picture {
+        width: 120px; /* Slightly larger profile picture */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+/* Desktops and Laptops */
+@media only screen and (min-width: 1024px) {
+    #resume-container {
+        width: 80%; /* Reduces width for larger screens */
+        padding: 40px;
+    }
+
+    #profile-picture {
+        width: 150px; /* Default profile picture size for desktop */
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
